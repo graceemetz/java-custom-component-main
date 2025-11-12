@@ -11,7 +11,24 @@ the following form: YYYY.0M.0D.
 ### Added
 
 - Designed kernel and enhanced interfaces for the Artifical Neuron component
+- Created an abstract class for Neuron (NeuronSecondary), implementing both common and secondary methods
 
 ### Updated
 
 - Changed design to include queues representing each set of weights and inputs
+- Fixed naming of interfaces to better match the convention
+- Changed some data types within methods in order to better execute the component's function
+
+## 2025.10.17
+
+### Added
+
+- Designed a proof of concept for an Artificial Neuron component
+
+## 2025.09.21
+
+### Added
+
+- Designed a Data Structures to HTML component
+- Designed an Artificial Neuron component
+- Designed a Library System component

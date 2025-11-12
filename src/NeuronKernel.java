@@ -9,7 +9,7 @@ import components.standard.Standard;
  * @author Grace Metz
  *
  */
-public interface NeuronKernel extends Standard<NeuronSecondary> {
+public interface NeuronKernel extends Standard<Neuron> {
 
     /**
      * Queue of Strings to represent the values of each input.
@@ -19,7 +19,7 @@ public interface NeuronKernel extends Standard<NeuronSecondary> {
     /**
      * Queue of values to represent the weights of each input.
      */
-    Queue<Double> weight = new Queue1L<>();
+    Queue<Double> weights = new Queue1L<>();
 
     /**
      * Retrieve the weight assigned to the inputs within this node.
