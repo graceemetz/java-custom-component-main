@@ -6,16 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## 2025.09.21
+## 2025.11.11
 
 ### Added
 
-- Designed a Data Structures to HTML component
-- Designed an Artificial Neuron component
-- Designed a Library System component
+- Designed kernel and enhanced interfaces for the Artifical Neuron component
 
-## 2025.10.17
+### Updated
 
-### Added
-
-- Designed a proof of concept for an Artificial Neuron component
+- Changed design to include queues representing each set of weights and inputs
