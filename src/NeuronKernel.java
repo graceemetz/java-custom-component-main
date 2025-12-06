@@ -1,5 +1,4 @@
 import components.queue.Queue;
-import components.queue.Queue1L;
 import components.standard.Standard;
 
 /**
@@ -9,21 +8,13 @@ import components.standard.Standard;
  * @author Grace Metz
  *
  */
-public interface NeuronKernel extends Standard<NeuronSecondary> {
-
-    /**
-     * Queue of Strings to represent the values of each input.
-     */
-    Queue<String> inputs = new Queue1L<>();
-
-    /**
-     * Queue of values to represent the weights of each input.
-     */
-    Queue<Double> weight = new Queue1L<>();
+public interface NeuronKernel extends Standard<Neuron> {
 
     /**
      * Retrieve the weight assigned to the inputs within this node.
      *
+     * @requires {@code |weights| >= 0}
+     * @ensures {@code <weights> = weights}
      * @return the queue of weight values
      */
     Queue<Double> weights();
@@ -31,6 +22,8 @@ public interface NeuronKernel extends Standard<NeuronSecondary> {
     /**
      * Return the inputs entered into the neuron.
      *
+     * @requires {@code |inputs| >= 0}
+     * @ensures {@code <inputs> = inputs}
      * @return the queue of input Strings
      */
     Queue<String> inputs();
@@ -40,6 +33,8 @@ public interface NeuronKernel extends Standard<NeuronSecondary> {
      *
      * @param value
      *            the String value being entered
+     * @requires {@code <value> != null}
+     * @ensures {@code <inputs> = #inputs * #value}
      */
     void setInput(String value);
 
