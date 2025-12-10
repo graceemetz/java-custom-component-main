@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Grace Metz
+- **Dot Number**: Metz.403
+- **Due Date**: 12/9/2023
 
 ## Assignment Overview
 
@@ -307,18 +307,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+This project definitely helped me to better understand the software development process, and I hope to continue applying these skills in the future. Even though the material presented in class and throughout the projects may allude to some of the skills needed in the portfolio project, I think that this was a great opportunity to learn more about the software life cycle in a "real world" setting, while still using a familiar API.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+While developing the NeuronSecondary class, I realized that I wasn't too confident in my understanding of abstract classes and how they worked. To remedy this, I looked at examples of abstract classes in the OSU API and compared those implementations with the class slides.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I enjoy software development still, even though I am excited to see what's out there besides the OSU way of doing things. For my job, I use SQL and Python and enjoy the process of writing programs using those tools. By completing this project, my perspective has changed in the positive direction, but I'd like to continue learning before coming to a final verdict.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +326,34 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Some skills that I picked up:
+- Branch handling, making pull requests using GitHub/Git
+- Writing software that layers on itself in a way that somehow works
+- Using a basic statistical model for artificial neuron activation
+- Using an artificial neuron for different tasks
+- Updating and maintaining a changelog for projects
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Utilized Git for version control
+- Wrote clean, production-ready software in adherence to OSU Software Sequence principles
+- Applied knowledge of statistical models to a machine learning context
+- Developed demo programs to showcase the artificial neuron's use cases
+- Updated and maintained an accessible changelog and documentation
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I am interested in machine learning as I believe that it is a useful field of study that has the potential to help many people. By making an artificial neuron and using it in different ways, I picked up some knowledge on statistics and logic that will be helpful in the future. Overall, I'm excited to continue learning.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I currently am working as a Product Intern for a healthcare company, and that is the field that I want to stay in for my future career. To stay up to date on the skills that I need, I can pursue certifications or courses in things like cybersecurity or data science. I can also gain mentorship from my bosses and engineers on my team, as well as other interns who may be further along in college or in their careers than I am.
 
 ### Changelog
 
