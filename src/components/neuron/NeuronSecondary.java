@@ -1,4 +1,7 @@
+package components.neuron;
+
 import components.queue.Queue;
+import components.queue.Queue1L;
 
 /**
  * Interface for additional methods within the Artificial Neuron component.
@@ -11,12 +14,12 @@ public abstract class NeuronSecondary implements Neuron {
     /**
      * Queue of Strings to represent the values of each input.
      */
-    private Queue<String> inputs;
+    private Queue<String> inputs = new Queue1L<String>();
 
     /**
      * Queue of values to represent the weights of each input.
      */
-    private Queue<Double> weights;
+    private Queue<Double> weights = new Queue1L<Double>();
 
     /**
      * Using the sigmoid activation function: an output >= 0.5 means a yes, or
@@ -48,6 +51,7 @@ public abstract class NeuronSecondary implements Neuron {
      */
     @Override
     public void setWeight(double value) {
+        assert value >= -1 && value <= 1;
         this.weights.enqueue(value);
     }
 
@@ -70,7 +74,7 @@ public abstract class NeuronSecondary implements Neuron {
     }
 
     /**
-     * Return the data in the Neuron component as a string.
+     * Return the data in the Neuron component as a String.
      *
      * @return the String representing the Neuron.
      */
@@ -100,6 +104,8 @@ public abstract class NeuronSecondary implements Neuron {
         }
 
         return this.weights.equals(object.weights())
-                && this.inputs.equals(object.inputs());
+                && this.inputs.equals(object.inputs())
+                && this.weights.length() == object.weights().length()
+                && this.inputs.length() == object.inputs().length();
     }
 }

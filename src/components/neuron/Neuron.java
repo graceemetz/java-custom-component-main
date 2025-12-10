@@ -1,3 +1,4 @@
+package components.neuron;
 
 /**
  * Interface for additional methods within the Artificial Neuron component.

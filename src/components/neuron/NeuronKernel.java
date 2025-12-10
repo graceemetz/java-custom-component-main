@@ -1,3 +1,5 @@
+package components.neuron;
+
 import components.queue.Queue;
 import components.standard.Standard;
 

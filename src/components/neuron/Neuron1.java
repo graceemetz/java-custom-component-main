@@ -1,3 +1,5 @@
+package components.neuron;
+
 import components.queue.Queue;
 import components.queue.Queue1L;
 
@@ -48,23 +50,30 @@ public class Neuron1 extends NeuronSecondary {
 
     @Override
     public final void setInput(String value) {
+        assert value != null;
         this.inputs.enqueue(value);
     }
 
     @Override
     public final void clear() {
-        this.inputs = this.inputs.newInstance();
-        this.weights = this.weights.newInstance();
+        this.createNewRep();
     }
 
     @Override
     public final Neuron newInstance() {
-        Neuron newIn = new Neuron1();
-        return newIn;
+        try {
+            return this.getClass().getConstructor().newInstance();
+        } catch (ReflectiveOperationException e) {
+            throw new AssertionError(
+                    "Cannot construct object of type " + this.getClass());
+        }
     }
 
     @Override
     public final void transferFrom(Neuron arg0) {
-        // TODO finish this for part 6
+        Neuron local = (Neuron) arg0;
+        this.inputs = local.inputs();
+        this.weights = local.weights();
+        local.clear();
     }
 }
