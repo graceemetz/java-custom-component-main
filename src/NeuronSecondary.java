@@ -1,22 +1,9 @@
 import components.queue.Queue;
 
 /**
- * Interface for additional methods within the Artificial Neuron component.
- *
- * @author Grace Metz
- *
+ * Layered implementations of secondary methods for {@code Neuron}.
  */
 public abstract class NeuronSecondary implements Neuron {
-
-    /**
-     * Queue of Strings to represent the values of each input.
-     */
-    private Queue<String> inputs;
-
-    /**
-     * Queue of values to represent the weights of each input.
-     */
-    private Queue<Double> weights;
 
     /**
      * Using the sigmoid activation function: an output >= 0.5 means a yes, or
@@ -39,7 +26,7 @@ public abstract class NeuronSecondary implements Neuron {
     }
 
     /**
-     * Set an object's weight and ensure they are usable by the neuron.
+     * Enter a weight to be used by the neuron.
      *
      * @param value
      *            the weight being entered
@@ -99,7 +86,7 @@ public abstract class NeuronSecondary implements Neuron {
             object = (Neuron) o;
         }
 
-        return this.weights.equals(object.weights())
-                && this.inputs.equals(object.inputs());
+        return this.weights.equals(object.weights)
+                && this.inputs.equals(object.inputs);
     }
 }

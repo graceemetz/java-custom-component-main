@@ -11,6 +11,16 @@ import components.standard.Standard;
 public interface NeuronKernel extends Standard<Neuron> {
 
     /**
+     * Queue of Strings to represent the values of each input.
+     */
+    Queue<String> inputs = new Queue1L<>();
+
+    /**
+     * Queue of values to represent the weights of each input.
+     */
+    Queue<Double> weights = new Queue1L<>();
+
+    /**
      * Retrieve the weight assigned to the inputs within this node.
      *
      * @requires {@code |weights| >= 0}
