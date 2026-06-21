@@ -14,12 +14,12 @@ public class Neuron1 extends NeuronSecondary {
     /**
      * Queue of Strings to represent the values of each input.
      */
-    private Queue<String> inputs;
+    private Queue<String> inputs = new Queue1L<>();
 
     /**
      * Queue of values to represent the weights of each input.
      */
-    private Queue<Double> weights;
+    private Queue<Double> weights = new Queue1L<>();
 
     /**
      * Creator of initial representation.
@@ -65,7 +65,6 @@ public class Neuron1 extends NeuronSecondary {
 
     @Override
     public final void transferFrom(Neuron arg0) {
-        this.inputs.transferFrom(arg0.inputs);
-        this.weights.transferFrom(arg0.weights);
+        // TODO finish this for part 6
     }
 }
