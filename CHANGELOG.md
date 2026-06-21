@@ -13,3 +13,9 @@ the following form: YYYY.0M.0D.
 - Designed a Data Structures to HTML component
 - Designed an Artificial Neuron component
 - Designed a Library System component
+
+## 2025.10.17
+
+### Added
+
+- Designed a proof of concept for an Artificial Neuron component
