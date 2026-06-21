@@ -1,3 +1,5 @@
+import components.queue.Queue;
+
 /**
  * Layered implementations of secondary methods for {@code Neuron}.
  */
@@ -7,6 +9,8 @@ public abstract class NeuronSecondary implements Neuron {
      * Using the sigmoid activation function: an output >= 0.5 means a yes, or
      * the neuron has fired.
      *
+     * @requires {@code |this.weights| >= 0 && |this.inputs| >= 0}
+     * @ensures {@code <activate> = true || false}
      * @return whether the neuron has fired.
      */
     @Override
@@ -26,6 +30,8 @@ public abstract class NeuronSecondary implements Neuron {
      *
      * @param value
      *            the weight being entered
+     * @requires {@code -1 <= value <= 1}
+     * @ensures {@code this.weights = #this.weights * #value}
      */
     @Override
     public void setWeight(double value) {
